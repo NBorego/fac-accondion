@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 1rem;
+  max-width: 25rem;
+  background-color: #ffffff;
+  padding: 1.2rem;
+  border-radius: 0.7rem;
+  color: #2f1533;
+  gap: 1rem;
+  box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.2);
+}
+main h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.2rem;
+}
+main h1 img {
+  width: 1.5rem;
+}
+main section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 1.2rem;
+  width: 100%;
+}
+main section h1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  font-size: 0.9rem;
+  color: #2f1533;
+  cursor: pointer;
+}
+main section h1:hover {
+  color: #8c6991;
+}
+main section h1 img {
+  width: 1.6rem;
+}
+main section p {
+  font-size: 0.8rem;
+  color: #8c6991;
+  line-height: 1.2rem;
+}
+main section:not(:last-child) {
+  border-bottom: 1px solid #f9f0ff;
+}
+@media (min-width: 1000px) {
+  main {
+    max-width: 30rem;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
+  main h1 {
+    font-size: 3rem;
+  }
+  main h1 img {
+    width: 2rem;
+  }
+  main section h1 {
+    font-size: 1rem;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Work Sans", sans-serif;
+  background-color: #f9f0ff;
+}
+body picture {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+body picture img,
+body picture source {
+  min-width: 100vw;
+}
+@media (max-height: 415px) {
+  body {
+    height: auto;
+  }
+  body picture {
+    position: absolute;
+    top: -10rem;
+  }
+}
+@media (min-height: 400px) {
+  body picture {
+    top: -5rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
