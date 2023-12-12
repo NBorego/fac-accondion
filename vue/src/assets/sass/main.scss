@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+@import './functions.scss';
+@import './variables.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include display-flex($direction: column);
+  height: 100vh;
+
+  picture {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+    img,
+    source {
+      min-width: 100vw;
+    }
+  }
+
+  font-family: $font;
+  background-color: $light-pink;
+}
